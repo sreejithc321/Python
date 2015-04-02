@@ -6,11 +6,11 @@
 
 ## NumPy
 NumPy is the fundamental package for scientific computing with Python
--intro_numpy.py
+- intro_numpy.py
 
 ## SciPy
 SciPy is another fundamental package for scientific computing with Python
--intro_scipy.py
+- intro_scipy.py
 
 
 
