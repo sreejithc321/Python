@@ -44,3 +44,50 @@ print X*5 # Scalar expansion
 
 print X*X.T       # Elementwise product
 print np.dot(X,X.T)  # Dot (matrix) product
+
+
+
+## Ref : http://www.labri.fr/perso/nrougier/teaching/numpy.100/index.html
+
+# Import the numpy package under the name np
+import numpy as np
+
+# Print the numpy version and the configuration.
+print np.__version__
+print np.__config__.show()
+
+# Create a null vector of size 10
+Z = np.zeros(10)
+print Z
+
+# Create a null vector of size 10 but the fifth value which is 1
+Z = np.zeros(10)
+Z[4] = 1
+print Z
+
+# Create a vector with values ranging from 10 to 49
+Z = np.arange(10,50)
+print Z
+
+# Create a 3x3 matrix with values ranging from 0 to 8
+
+Z = np.arange(9).reshape(3,3)
+print Z
+
+# Find indices of non-zero elements from [1,2,0,0,4,0]
+nz = np.nonzero([1,2,0,0,4,0])
+print nz
+
+# Create a 3x3 identity matrix
+Z = np.eye(3)
+print Z
+
+# Create a 5x5 matrix with values 1,2,3,4 just below the diagonal
+Z = np.diag(1+np.arange(4),k=-1)
+print Z
+
+# Create a 3x3x3 array with random values
+Z = np.random.random((3,3,3))
+print Z
+
+
